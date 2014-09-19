@@ -44,7 +44,6 @@
             this.mainDisplayBox.TabIndex = 0;
             this.mainDisplayBox.TabStop = false;
             this.mainDisplayBox.Click += new System.EventHandler(this.mainDisplayBox_Click);
-            this.mainDisplayBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainDisplayBox_MouseMove);
             // 
             // pixelDensity
             // 
@@ -77,7 +76,6 @@
             this.Controls.Add(this.mainDisplayBox);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.mainDisplayBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pixelDensity)).EndInit();
             this.ResumeLayout(false);

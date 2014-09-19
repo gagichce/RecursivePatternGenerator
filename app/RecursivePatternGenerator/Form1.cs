@@ -17,7 +17,7 @@ namespace RecursivePatternGenerator
         public Form1()
         {
             InitializeComponent();
-            currentPattern = new RecursivePattern(21, 21);
+            currentPattern = new RecursivePattern(30, 30);
             //currentPattern.TogglePosition(1, 0);
             //currentPattern.TogglePosition(1, 1);
             //currentPattern.TogglePosition(1, 2);
@@ -72,19 +72,6 @@ namespace RecursivePatternGenerator
             this.lblFeedBack.Text = correctX + "," + correctY;
             this.currentPattern.TogglePosition(correctX, correctY);
             UpdateDisplay();
-        }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            //Point myPoint = this.PointToClient(MousePosition);
-            //ProcessClick(myPoint.X, myPoint.Y);
-
-        }
-
-        private void mainDisplayBox_MouseMove(object sender, MouseEventArgs e)
-        {
-            //Point myPoint = this.PointToClient(MousePosition);
-            //ProcessClick(myPoint.X, myPoint.Y);
         }
     }
 }
